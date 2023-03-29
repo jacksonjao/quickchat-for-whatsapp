@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+:root {
+    --primary-color: #e0e0e0;
+    --text-color: #565656;
+    --shadow-color: #bebebe;
+    --app-height: 100%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    display: flex;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    min-height: var(--app-height);
+    overflow: auto;
+}
+
+
+body {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 2rem;
+}
+
+button {
+    border: none;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+
+button:not(button[disabled]):hover {
+    cursor: pointer;
+}
+
+button:not(button[disabled]):active {
+    transition: 0.05s;
+    background: var(--primary-color);
+    box-shadow: 0 0 0 var(--shadow-color),
+    -0 -0 0 #ffffff;
+    transform: scale(0.95);
+    filter: contrast(0.9);
+}
+
+
+button[disabled] {
+    box-shadow: 0 0 0 var(--shadow-color),
+    -0 -0 0 #ffffff;
+    opacity: 0.7;
+    transform: scale(0.95);
+}
+
+img {
+    width: 100%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+.jao-h1 {
+    font-size: 1.25rem;
+}
+
+.jao-p {
+    font-size: 0.875rem;
+}
+
+
+.jao-ws {
+    align-self: center;
+    justify-self: center;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+    border-radius: 1.25rem;
+    background: var(--primary-color);
+    box-shadow: 0.5rem 0.5rem 1rem var(--shadow-color),
+    -0.5rem -0.5rem 1rem #ffffff;
+    padding: 4rem 2.25rem;
+    max-width: 21.85rem;
+    position: relative;
+}
+
+.jao-ws__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.jao-ws__title {
+    text-align: center;
+}
+
+.jao-ws__title-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.jao-ws__input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    flex: 1;
+}
+
+.jao-ws__label-input {
+    width: 100%;
+    background: var(--primary-color);
+    border-radius: 0.625rem;
+    box-shadow: inset 0.25rem 0.25rem 0.5rem var(--shadow-color),
+    inset -0.25rem -0.25rem 0.5rem #ffffff;
+    padding: 0.625rem;
+    min-height: 2.5rem;
+    display: flex;
+}
+
+.jao-ws__paste-button {
+    border-radius: 0.3rem;
+    padding: 0.25rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    box-shadow: 0.15rem 0.15rem 0.3rem var(--shadow-color),
+    -0.15rem -0.15rem 0.3rem #ffffff;
+    font-size: 0.6rem;
+}
+
+.jao-ws__send-button-wrapper {
+    border-radius: 3.125rem;
+    background: var(--primary-color);
+    box-shadow: inset 0.43rem 0.43rem 0.86rem var(--shadow-color),
+    inset -0.43rem -0.43rem 0.86rem #ffffff;
+    padding: 0.5rem;
+}
+
+.jao-ws__send-button {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 1.5rem;
+    background: var(--primary-color);
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--shadow-color),
+    -0.3rem -0.3rem 0.6rem #ffffff;
+    padding: 0.9rem;
+    position: relative;
+    transition: 0.25s;
+}
+
+.jao-ws__send-button:before {
+    content: '';
+    position: absolute;
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #4FD15DFF;
+    left: 0;
+    top: 0;
+    transform: scale(0.8);
+    box-sizing: border-box;
+}
+
+.jao-ws__send-button[disabled]:before {
+    border-color: var(--shadow-color);
+}
+
+.jao-ws__send-icon{
+    width: 100%;
+    height: 100%;
+}
+
+.jao-ws__error-message {
+    position: absolute;
+    bottom: 1.2rem;
+    width: 80%;
+    font-size: 0.7rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0 var(--shadow-color),
+    -0 -0 0 #ffffff;
+    padding: 0.25rem 1rem;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+    color: var(--text-color);
+}
+
+.jao-ws__error-message--show {
+    opacity: 1;
+    box-shadow: 0.08rem 0.08rem 0.16rem var(--shadow-color),
+    -0.08rem -0.08rem 0.16rem #ffffff;
+}
+
+

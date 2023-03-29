@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuickChat for WhatsApp</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="QuickChat for WhatsApp - A simple and efficient app to open multiple WhatsApp numbers without saving them.">
+    <meta name="keywords" content="QuickChat, WhatsApp, multiple numbers, chat, messaging">
+    <meta name="author" content="Jhon Osorio">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="msapplication-TileColor" content="#e0e0e0">
+    <meta name="theme-color" content="#e0e0e0">
+
+    <!-- Soporte para iOS -->
+    <link rel="apple-touch-icon" href="assets/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+    <script defer src="./assets/js/main.js"></script>
+</head>
+<body>
+
+<article class="jao-ws">
+    <header class="jao-ws__header">
+        <img class="jao-ws__title-icon" src="assets/images/ws-icon.svg" alt="WhatsApp icon">
+        <h1 class="jao-ws__title jao-h1" id="jao-ws__title">Text Without Saving Number</h1>
+        <p class="jao-p">Start a WhatsApp conversation without the need to save the contact's phone number in your device.</p>
+    </header>
+    <label class="jao-ws__label-input">
+    <input class="jao-ws__input" id="jao-ws__input" type="text" placeholder="Whatsapp Number"  aria-label="Enter Whatsapp Number">
+    <button id="jao-ws__paste-button" class="jao-ws__paste-button" aria-label="Paste number from clipboard">PASTE</button>
+    </label>
+
+<div id="jao-ws__send-button-wrapper" class="jao-ws__send-button-wrapper"   >
+    <button disabled  class="jao-ws__send-button" id="jao-ws__send-button" aria-label="Open number on Whatsapp">
+    <img src="assets/images/send-icon.svg" alt="">
+    </button>
+</div>
+
+    <p class="jao-ws__error-message" id="jao-ws__error-message">Please enter a valid WhatsApp number</p>
+</article>
+
+</body>
+</html>

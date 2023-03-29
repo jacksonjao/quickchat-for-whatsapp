@@ -1,0 +1,44 @@
+{
+  "name": "Quick chat for Whatsapp",
+  "short_name": "QuickChat Whatsapp",
+  "description": "QuickChat for WhatsApp is a web application that allows you to chat with your WhatsApp contacts without the need to save their phone numbers on your device. Simply enter the phone number and start chatting on WhatsApp right away.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#e0e0e0",
+  "theme_color": "#e0e0e0",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/icons/icon-72x72.png",
+      "type": "image/png", "sizes": "72x72"
+    },
+    {
+      "src": "assets/icons/icon-96x96.png",
+      "type": "image/png", "sizes": "96x96"
+    },
+    {
+      "src": "assets/icons/icon-128x128.png",
+      "type": "image/png","sizes": "128x128"
+    },
+    {
+      "src": "assets/icons/icon-144x144.png",
+      "type": "image/png", "sizes": "144x144"
+    },
+    {
+      "src": "assets/icons/icon-152x152.png",
+      "type": "image/png", "sizes": "152x152"
+    },
+    {
+      "src": "assets/icons/icon-192x192.png",
+      "type": "image/png", "sizes": "192x192"
+    },
+    {
+      "src": "assets/icons/icon-384x384.png",
+      "type": "image/png", "sizes": "384x384"
+    },
+    {
+      "src": "assets/icons/icon-512x512.png",
+      "type": "image/png", "sizes": "512x512"
+    }
+  ]
+}
