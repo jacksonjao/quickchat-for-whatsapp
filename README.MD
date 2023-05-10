@@ -2,7 +2,7 @@
 
 QuickChat for WhatsApp is a web application that allows you to chat with your WhatsApp contacts without the need to save their phone numbers on your device. Simply enter the phone number and start chatting on WhatsApp right away.
 
-You can try out the live app here: https://jacksonjao.github.io/portfolio/quickchat-for-whatsapp/
+You can try out the live app here: https://www.jhonosorio.dev/quickchat-for-whatsapp/
 
 ## Features
 
@@ -14,7 +14,7 @@ You can try out the live app here: https://jacksonjao.github.io/portfolio/quickc
 
 To use QuickChat for WhatsApp, follow these steps:
 
-1. Open the app in your web browser: https://jacksonjao.github.io/portfolio/quickchat-for-whatsapp/
+1. Open the app in your web browser: https://www.jhonosorio.dev/quickchat-for-whatsapp/
 2. Enter the phone number you want to chat with on WhatsApp. Make sure to include the country code at the beginning of the number (e.g. +1 for the United States).
 3. Click the "Send message icon" button.
 4. If you have WhatsApp installed on your device, a conversation with the number you entered will open. Otherwise, you will be redirected to the WhatsApp download page in the corresponding app store.
